@@ -12,9 +12,6 @@ path_to_db = os.path.join(basedir,"data.sqlite")
 
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///urls.db'
-# app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:Fioiyo909/@127.0.0.1:3306/sql_hr'
-# app.config['SQLALCHEMY_COMMIT_ON_TEARDOWN'] = True
-# app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
 class Urls(db.Model):
